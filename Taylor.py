@@ -1,4 +1,3 @@
-from scipy import integrate
 import math
 import matplotlib.pyplot as plt
 from sympy import *
@@ -26,14 +25,14 @@ print(bruh)
 xarray = []
 yarray = []
 farray = []
-for x in range(-100,100):
+for x in range(-100, 100):
     if x == 0:
         x = 1
     xarray.append(x)
     yarray.append(eval(funkcja))
     farray.append(eval(bruh))
 
-plt.plot(xarray, yarray, label = 'x' )
-plt.plot(xarray, farray, label = 'teilor(x)')
+plt.plot(xarray, yarray, label='x')
+plt.plot(xarray, farray, label='teilor(x)')
 plt.axis([-100, 100, -100, 100])
 plt.show()
